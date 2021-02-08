@@ -1,8 +1,8 @@
-const TRIANGLE_WIDTH_HEIGHT = 80;
+const TRIANGLE_WIDTH_HEIGHT = 30;
 var theta = 0;
 
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(900, 900);
   background(255);
 }
 
@@ -15,7 +15,7 @@ function draw() {
 
   for (i = 0; i < amountX; i++) {
     for (j = 0; j < amountY; j++) {
-      var colorCode = map(sqrt(sin(theta - i * j) + 1), 0, 1.5, 64, 255);
+      var colorCode = map(sqrt(sin(theta - i * j) + 1), 0, 1.5, 64, 235);
       fill(colorCode);
       triangle(
         (i + 1) * TRIANGLE_WIDTH_HEIGHT,
